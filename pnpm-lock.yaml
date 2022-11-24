@@ -6,10 +6,14 @@ specifiers:
   '@types/react-dom': 18.0.9
   eslint: 8.28.0
   eslint-config-next: 13.0.4
+  eslint-plugin-react-hooks: ^4.6.0
   next: 13.0.4
+  playwright-aws-lambda: ^0.9.0
+  playwright-core: ^1.28.0
   react: 18.2.0
   react-dom: 18.2.0
   typescript: 4.9.3
+  zod: ^3.19.1
 
 dependencies:
   '@types/node': 18.11.9
@@ -17,10 +21,14 @@ dependencies:
   '@types/react-dom': 18.0.9
   eslint: 8.28.0
   eslint-config-next: 13.0.4_hsf322ms6xhhd4b5ne6lb74y4a
+  eslint-plugin-react-hooks: 4.6.0_eslint@8.28.0
   next: 13.0.4_biqbaboplfbrettd7655fr4n2y
+  playwright-aws-lambda: 0.9.0_playwright-core@1.28.0
+  playwright-core: 1.28.0
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
   typescript: 4.9.3
+  zod: 3.19.1
 
 packages:
 
@@ -1354,6 +1362,14 @@ packages:
       object.assign: 4.1.4
     dev: false
 
+  /lambdafs/2.1.1:
+    resolution: {integrity: sha512-x5k8JcoJWkWLvCVBzrl4pzvkEHSgSBqFjg3Dpsc4AcTMq7oUMym4cL/gRTZ6VM4mUMY+M0dIbQ+V1c1tsqqanQ==}
+    engines: {node: '>= 10.16'}
+    hasBin: true
+    dev: false
+    bundledDependencies:
+      - tar-fs
+
   /language-subtag-registry/0.3.22:
     resolution: {integrity: sha512-tN0MCzyWnoz/4nHS6uxdlFWoUZT7ABptwKPQ52Ea7URk6vll88bWBVhodtnlfEuCcKWNGoc+uGbw1cwa9IKh/w==}
     dev: false
@@ -1624,6 +1640,22 @@ packages:
   /picomatch/2.3.1:
     resolution: {integrity: sha512-JU3teHTNjmE2VCGFzuY8EXzCDVwEqB2a8fsIvwaStHhAWJEeVd1o1QD80CU6+ZdEXXSLbSsuLwJjkCBWqRQUVA==}
     engines: {node: '>=8.6'}
+    dev: false
+
+  /playwright-aws-lambda/0.9.0_playwright-core@1.28.0:
+    resolution: {integrity: sha512-MnzLTZ4B9I4JdWJ+eq7BbrhFjL6VyT0bF+ccNjBCwjwlBNQaTEXOcrkAe+p8YkOXnYUqBbsrZj5Ene8PqKosiw==}
+    engines: {node: '>= 8.0.0'}
+    peerDependencies:
+      playwright-core: ^1
+    dependencies:
+      lambdafs: 2.1.1
+      playwright-core: 1.28.0
+    dev: false
+
+  /playwright-core/1.28.0:
+    resolution: {integrity: sha512-nJLknd28kPBiCNTbqpu6Wmkrh63OEqJSFw9xOfL9qxfNwody7h6/L3O2dZoWQ6Oxcm0VOHjWmGiCUGkc0X3VZA==}
+    engines: {node: '>=14'}
+    hasBin: true
     dev: false
 
   /postcss/8.4.14:
@@ -2007,4 +2039,8 @@ packages:
   /yocto-queue/0.1.0:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
     engines: {node: '>=10'}
+    dev: false
+
+  /zod/3.19.1:
+    resolution: {integrity: sha512-LYjZsEDhCdYET9ikFu6dVPGp2YH9DegXjdJToSzD9rO6fy4qiRYFoyEYwps88OseJlPyl2NOe2iJuhEhL7IpEA==}
     dev: false
