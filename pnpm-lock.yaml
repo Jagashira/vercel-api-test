@@ -1,6 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@playwright/test': ^1.28.1
   '@types/node': 18.11.9
   '@types/react': 18.0.25
   '@types/react-dom': 18.0.9
@@ -8,6 +9,7 @@ specifiers:
   eslint-config-next: 13.0.4
   eslint-plugin-react-hooks: ^4.6.0
   next: 13.0.4
+  playwright: ^1.28.1
   playwright-aws-lambda: ^0.9.0
   playwright-core: ^1.28.0
   react: 18.2.0
@@ -16,6 +18,7 @@ specifiers:
   zod: ^3.19.1
 
 dependencies:
+  '@playwright/test': 1.28.1
   '@types/node': 18.11.9
   '@types/react': 18.0.25
   '@types/react-dom': 18.0.9
@@ -23,6 +26,7 @@ dependencies:
   eslint-config-next: 13.0.4_hsf322ms6xhhd4b5ne6lb74y4a
   eslint-plugin-react-hooks: 4.6.0_eslint@8.28.0
   next: 13.0.4_biqbaboplfbrettd7655fr4n2y
+  playwright: 1.28.1
   playwright-aws-lambda: 0.9.0_playwright-core@1.28.0
   playwright-core: 1.28.0
   react: 18.2.0
@@ -242,6 +246,15 @@ packages:
       picocolors: 1.0.0
       tiny-glob: 0.2.9
       tslib: 2.4.1
+    dev: false
+
+  /@playwright/test/1.28.1:
+    resolution: {integrity: sha512-xN6spdqrNlwSn9KabIhqfZR7IWjPpFK1835tFNgjrlysaSezuX8PYUwaz38V/yI8TJLG9PkAMEXoHRXYXlpTPQ==}
+    engines: {node: '>=14'}
+    hasBin: true
+    dependencies:
+      '@types/node': 18.11.9
+      playwright-core: 1.28.1
     dev: false
 
   /@rushstack/eslint-patch/1.2.0:
@@ -1656,6 +1669,21 @@ packages:
     resolution: {integrity: sha512-nJLknd28kPBiCNTbqpu6Wmkrh63OEqJSFw9xOfL9qxfNwody7h6/L3O2dZoWQ6Oxcm0VOHjWmGiCUGkc0X3VZA==}
     engines: {node: '>=14'}
     hasBin: true
+    dev: false
+
+  /playwright-core/1.28.1:
+    resolution: {integrity: sha512-3PixLnGPno0E8rSBJjtwqTwJe3Yw72QwBBBxNoukIj3lEeBNXwbNiKrNuB1oyQgTBw5QHUhNO3SteEtHaMK6ag==}
+    engines: {node: '>=14'}
+    hasBin: true
+    dev: false
+
+  /playwright/1.28.1:
+    resolution: {integrity: sha512-92Sz6XBlfHlb9tK5UCDzIFAuIkHHpemA9zwUaqvo+w7sFMSmVMGmvKcbptof/eJObq63PGnMhM75x7qxhTR78Q==}
+    engines: {node: '>=14'}
+    hasBin: true
+    requiresBuild: true
+    dependencies:
+      playwright-core: 1.28.1
     dev: false
 
   /postcss/8.4.14:

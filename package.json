@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@playwright/test": "^1.28.1",
     "@types/node": "18.11.9",
     "@types/react": "18.0.25",
     "@types/react-dom": "18.0.9",
@@ -16,6 +17,7 @@
     "eslint-config-next": "13.0.4",
     "eslint-plugin-react-hooks": "^4.6.0",
     "next": "13.0.4",
+    "playwright": "^1.28.1",
     "playwright-aws-lambda": "^0.9.0",
     "playwright-core": "^1.28.0",
     "react": "18.2.0",
